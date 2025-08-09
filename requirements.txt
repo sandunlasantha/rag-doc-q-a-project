@@ -1,0 +1,25 @@
+# Optimized requirements.txt for the RAG API (CPU-only)
+
+# This first line tells pip to look for CPU-specific versions of torch
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# Core web framework and server
+fastapi
+uvicorn[standard]
+
+# For loading environment variables (good practice)
+python-dotenv
+
+# LangChain and specific integrations
+langchain
+langchain-huggingface
+langchain-chroma
+langchain-community
+
+# For running local Hugging Face models
+transformers
+torch 
+sentence-transformers
+
+# For reading the PDF
+pypdf

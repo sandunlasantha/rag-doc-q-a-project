@@ -1,0 +1,20 @@
+# macOS system files
+.DS_Store
+
+# Python virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Secrets file
+.env
+
+# ChromaDB runtime data
+chroma_db/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
